@@ -1,0 +1,13 @@
+# Ignore log-files
+*.log
+
+# Ignore dependencies directory
+node_modules/
+
+# Ignore temp files
+*.tmp
+*.temp
+
+# Ignore personal config files
+.prettierrc
+
