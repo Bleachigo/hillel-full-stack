@@ -19,7 +19,6 @@ p {
   background: yellowgreen;
 }
 
-
 div p {
   background: yellow;
 }
@@ -29,12 +28,17 @@ div p {
   background: cyan;
 }
 
-div>div>p {
+div > div > p {
   background: darkred;
   color: #fff;
 }
 
-h1+p {
+h1 + p {
   background: blue;
   color: #fff;
+}
+
+div:has(h1) {
+  padding: 5px 0;
+  background: lightgrey;
 }
