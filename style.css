@@ -1,0 +1,40 @@
+body {
+  font-size: 18px;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+p {
+  background: indianred;
+}
+
+#text {
+  background: burlywood;
+}
+
+.paragraph {
+  background: yellowgreen;
+}
+
+
+div p {
+  background: yellow;
+}
+
+[action="processor.php"]:has([type="text"]) {
+  padding: 10px 0;
+  background: cyan;
+}
+
+div>div>p {
+  background: darkred;
+  color: #fff;
+}
+
+h1+p {
+  background: blue;
+  color: #fff;
+}

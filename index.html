@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Specificity</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <section class="container">
+      <p>Застосовується до тегу &lt;p&gt;. Вага: 0-0-1</p>
+      <div>
+        <p>Застосовується до усіх &lt;p&gt; вкладених в &lt;div&gt;, вага: 0-0-2.</p>
+      </div>
+      <div class="div">
+        <p class="paragraph">
+          Застосовується до тегу з класом paragraph (в даному випадку це є тег &lt;p&gt;)
+          вага: 0-1-0
+        </p>
+      </div>
+      <div id="block">
+        <p id="text">
+          Застосовується до тегу з ідентифікатором text (в даному випадку це є тег
+          &lt;p&gt;) вага: 1-0-0
+        </p>
+      </div>
+      <form action="processor.php">
+        <label>
+          <input type="text" placeholder="input" />
+          Застосовується до тегу з атрибутом action="processor.php" , який має вкладений
+          тег з атрибутом type="text". Вага: 0-3-0.
+        </label>
+      </form>
+      <div>
+        <div>
+          <p>
+            Застосовується до тегу &lt;p&gt; який вкладений у тег &lt;div&gt;, який у свою
+            чергу вкладений в &lt;div&gt;. Вага: 0-0-3.
+          </p>
+        </div>
+      </div>
+      <div>
+        <h1>Заголовок</h1>
+        <p>Застосовується лише до абзацу, який йде після заголовку</p>
+        <p>абзацабзацабзацабзацабзацабзацабзац</p>
+      </div>
+      <div></div>
+    </section>
+  </body>
+</html>
