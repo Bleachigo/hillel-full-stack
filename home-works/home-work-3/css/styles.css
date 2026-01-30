@@ -1,0 +1,198 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0 15px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+
+fieldset {
+  margin: 0;
+}
+
+label {
+  display: inline-block;
+}
+
+button {
+  padding: 0;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.css-validator {
+  text-align: center;
+}
+
+.header {
+  padding: 20px 0;
+}
+
+.nav__list {
+  display: flex;
+  gap: 5px;
+  color: #000;
+}
+
+.nav__link {
+  padding: 5px;
+  letter-spacing: 1.2px;
+}
+
+.nav__link:hover {
+  text-shadow: 0 0 1px #000;
+}
+
+.hero {
+  background: #d2e471;
+  padding: 25vh 0;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.hero__title {
+  font-size: 5.5rem;
+  margin-bottom: 20px;
+}
+
+.hero__text {
+  font-size: 20px;
+  width: 600px;
+  line-height: 1.3em;
+}
+
+.hero__img {
+  width: 50%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.section {
+  padding: 200px 0;
+}
+
+.section__title {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.section__title--big {
+  font-size: 4rem;
+}
+
+.section__text {
+  max-width: 80%;
+  line-height: 1.3em;
+}
+
+.section__text--big {
+  font-size: 18px;
+}
+
+.footer {
+  padding: 100px 0;
+  background: rgba(3, 26, 28, 0.93);
+}
+
+.footer__announce {
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 5rem;
+  letter-spacing: 0.2em;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+.section--weather {
+  background-image: url("/img/forecast.jpg");
+  background-image: url("/img/forecast.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.section--lightgrey {
+  background: #d3d3d3;
+}
+
+.subtitle-h3 {
+  font-size: 1.7rem;
+}
+
+.subtitle-h4 {
+  font-size: 1.2rem;
+}
+
+.forecast__title {
+  margin-bottom: 6px;
+}
+
+.section--contacts {
+  background: #9cf2e8;
+}
+
+.form {
+  margin: 0 15px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.not-input {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.label {
+  margin-right: 23px;
+}
+
+.form-btn {
+  width: 100px;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 5px 5px;
+  background: #8eebeb;
+}
+
+.gallery-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  max-width: 80%;
+}

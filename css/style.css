@@ -1,44 +1,36 @@
 body {
+  font-family: arial, sans-serif;
   font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-  max-width: 1440px;
-  margin: 0 auto;
+  height: 100vh;
+  background: url("../img/fullstack.png") center / cover no-repeat;
+  padding: 15px;
 }
 
-p {
-  background: indianred;
+.nav {
+  width: fit-content;
+  backdrop-filter: blur(7px);
+  border-radius: 10px;
 }
 
-#text {
-  background: burlywood;
+.nav__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.paragraph {
-  background: yellowgreen;
-}
-
-div p {
-  background: yellow;
-}
-
-[action="processor.php"]:has([type="text"]) {
-  padding: 10px 0;
-  background: cyan;
-}
-
-div > div > p {
-  background: darkred;
-  color: #fff;
-}
-
-h1 + p {
-  background: blue;
-  color: #fff;
-}
-
-div:has(h1) {
-  padding: 5px 0;
-  background: lightgrey;
+.nav__link {
+  padding: 5px;
+  color: greenyellow;
 }
