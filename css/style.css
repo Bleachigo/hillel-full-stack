@@ -11,6 +11,10 @@ ul {
   padding: 0;
 }
 
+a {
+  text-decoration: transparent;
+}
+
 .container {
   height: 100vh;
   background: url("../img/fullstack.png") center / cover no-repeat;
@@ -21,13 +25,19 @@ ul {
   width: fit-content;
   backdrop-filter: blur(7px);
   border-radius: 10px;
+  margin: 0 auto;
 }
 
 .nav__list {
   list-style: none;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 10px;
+}
+
+.nav__item:hover .nav__link {
+  text-decoration: underline;
+  text-underline-offset: 5px;
 }
 
 .nav__link {

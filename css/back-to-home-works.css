@@ -1,0 +1,10 @@
+.back {
+  text-align: end;
+  text-decoration: none;
+  text-underline-offset: 2px;
+  padding: 5px 0;
+}
+
+.back a {
+  color: saddlebrown;
+}
