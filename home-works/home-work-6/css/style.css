@@ -3,13 +3,38 @@
 }
 
 table {
-  border: 5px solid #000;
+  border: 5px solid #0a0a0a;
   border-collapse: collapse;
-  font-size: 15px;
+  table-layout: fixed;
+  width: 500px;
+  height: 500px;
 }
 
-tr td {
-  border: 5px solid #000;
-  width: 16px;
-  height: 16px;
+td {
+  border: 5px solid #0a0a0a;
+}
+
+.container {
+  padding: 0 calc(50vw - 720px);
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.yellow {
+  background: #f8d21c;
+}
+
+.red {
+  background: #f01c13;
+}
+
+.blue {
+  background: #1512b4;
+}
+
+.dark {
+  background: #0a0a0a;
 }
