@@ -13,7 +13,8 @@ table {
 }
 
 td {
-  border: 5px solid #0a0a0a;
+  border: 7px solid #0a0a0a;
+  height: 10px;
 }
 
 .container {
@@ -39,4 +40,17 @@ td {
 
 .dark {
   background: #0a0a0a;
+}
+
+.bottomless-border {
+  border-bottom: none;
+}
+
+.topless-border {
+  border-top: none;
+}
+
+.borderless {
+  border-top: none;
+  border-bottom: none;
 }
