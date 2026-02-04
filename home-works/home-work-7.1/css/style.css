@@ -1,0 +1,78 @@
+section {
+  background: greenyellow;
+  padding: 30px 0;
+}
+
+div {
+  background: pink;
+  padding: 3px;
+  margin: 20px;
+  border: 1px solid green;
+}
+
+.container {
+  max-width: 720px;
+  margin-inline: auto;
+  outline: 1px solid blue;
+}
+
+.header {
+  padding: 50px 0;
+  display: flex;
+  background: lightblue;
+}
+
+.header--lesson {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.nav__list--row {
+  flex-direction: row;
+  list-style: none;
+}
+
+.nav__item::marker {
+  color: orangered;
+}
+
+.nav__link {
+  text-decoration: transparent;
+  font-family: arial;
+}
+
+.div--block {
+  background: orange;
+  margin-bottom: 2px;
+  padding-bottom: 2px;
+}
+
+.span--inline {
+  background: lightcoral;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+.separator {
+  margin: 20px 0;
+}
+
+.oh-my-span {
+  background: cadetblue;
+  color: white;
+  padding: 6px;
+  margin: 15px;
+}
+
+.oh-my-spoon {
+  background: olivedrab;
+  color: wheat;
+  margin: 20px;
+}
