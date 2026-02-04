@@ -13,13 +13,31 @@ div {
 .container {
   max-width: 720px;
   margin-inline: auto;
-  outline: 1px solid blue;
+  border: 2px solid blue;
+}
+
+.container--fixed-size {
+  width: 600px;
+  height: 400px;
+}
+
+.container--hidden {
+  overflow: hidden;
+}
+
+.container--scroll {
+  overflow: scroll;
 }
 
 .header {
   padding: 50px 0;
   display: flex;
-  background: lightblue;
+}
+
+.header--fixed {
+  width: 100%;
+  position: fixed;
+  z-index: 1;
 }
 
 .header--lesson {
@@ -31,12 +49,14 @@ div {
 .nav__list {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 15px;
+  padding: 0;
 }
 
 .nav__list--row {
   flex-direction: row;
   list-style: none;
+  gap: 10px;
 }
 
 .nav__item::marker {
@@ -46,18 +66,29 @@ div {
 .nav__link {
   text-decoration: transparent;
   font-family: arial;
+  background: lightblue;
+  padding: 6px;
+  border-radius: 6px;
 }
 
-.div--block {
+.div-block {
   background: orange;
   margin-bottom: 2px;
   padding-bottom: 2px;
 }
 
-.span--inline {
+.div-block--inline {
+  display: inline;
+}
+
+.span-inline {
   background: lightcoral;
   margin-top: 10px;
   padding-top: 10px;
+}
+
+.span-inline--block {
+  display: block;
 }
 
 .separator {
@@ -75,4 +106,80 @@ div {
   background: olivedrab;
   color: wheat;
   margin: 20px;
+}
+
+.div-flex {
+  display: flex;
+}
+
+.border {
+  border: 5px solid;
+  width: 30px;
+}
+
+.border-box {
+  box-sizing: border-box;
+}
+
+.image {
+  width: 100px;
+  height: 100px;
+  background: violet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.image--wide {
+  width: 700px;
+}
+
+.image--tall {
+  height: 700px;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.clearfix {
+  clear: both;
+  text-align: center;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.image.absolute:nth-child(1) {
+  bottom: 5px;
+  right: 5px;
+}
+
+.image.absolute:nth-child(2) {
+  top: 5px;
+  right: 5px;
+}
+
+.image.absolute:nth-child(3) {
+  bottom: 5px;
+  left: 5px;
+}
+
+.image.absolute:nth-child(4) {
+  top: 5px;
+  left: 5px;
+}
+
+.image--sticky {
+  position: sticky;
 }

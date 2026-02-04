@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Block and inline</title>
+    <title>Display and box-sizing</title>
     <link href="../css/style.css" rel="stylesheet" />
   </head>
   <body>
@@ -42,24 +42,29 @@
     <section>
       <div class="container">
         <div class="separator">
-          <div class="div--block">div with fuuuuuuuuuuuuuull lenght</div>
-          <span class="span--inline"
+          <div class="div-block div-block--inline">
+            div with fuuuuuuuuuuuuuull lenght
+          </div>
+          <span class="span-inline span-inline--block"
             >and span with fffffffffuuuuuuuuullllll lenght</span
           >
         </div>
       </div>
       <div class="separator">
-        <div>
-          <span>span</span>
-          <div>
-            <div>
-              <div>i</div>
+        <div class="div-flex">
+          <span>This span says: I'm in flex div</span>
+          <div class="div-flex">
+            <div class="div-flex">
+              <div class="border border-box">i</div>
+              <div class="border">j</div>
+              <div class="border">s</div>
+              <div class="border">r</div>
             </div>
             <span>span</span>
           </div>
         </div>
         <span class="oh-my-span">span</span>
-        <span class="oh-my-spoon">spoon</span>
+        <span class="oh-my-spoon">span</span>
       </div>
     </section>
   </body>
