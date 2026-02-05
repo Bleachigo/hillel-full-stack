@@ -183,3 +183,7 @@ div {
 .image--sticky {
   position: sticky;
 }
+
+h2 {
+  text-align: center;
+}
