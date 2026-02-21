@@ -1,0 +1,36 @@
+@use "variables" as var;
+
+@mixin xl {
+  @media screen and (max-width: var.$screen-xl) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media screen and (max-width: var.$screen-lg) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media screen and (max-width: var.$screen-md) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media screen and (max-width: var.$screen-sm) {
+    @content;
+  }
+}
+
+@mixin custom {
+  @media screen and (max-width: 474px) {
+    @content;
+  }
+}
+
+@mixin section-title {
+  font-size: var.$fz-h2;
+  color: #000;
+}

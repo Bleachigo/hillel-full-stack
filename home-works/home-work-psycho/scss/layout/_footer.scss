@@ -1,0 +1,32 @@
+@use "../abstracts" as abst;
+
+.footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: abst.$accent;
+
+  @include abst.sm {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+  }
+}
+
+.copyrights__title {
+  font-size: abst.$fz-h3;
+  margin-bottom: 20px;
+  color: #fff;
+
+  @include abst.sm {
+    margin-bottom: 10px;
+  }
+}
+
+.copirights__info {
+  font-size: 13px;
+  color: #fff;
+
+  @include abst.sm {
+    font-size: 2.2vw;
+  }
+}

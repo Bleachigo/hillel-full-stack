@@ -1,0 +1,15 @@
+@use "../abstracts" as abst;
+
+.btn {
+  padding: 21px 41px;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: abst.$lh-base;
+  letter-spacing: 0.1em;
+  background: abst.$accent;
+
+  @include abst.sm {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+}

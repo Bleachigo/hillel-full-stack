@@ -1,0 +1,53 @@
+@use "../abstracts" as abst;
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: abst.$font-stack;
+  font-size: abst.$fz-base;
+  color: abst.$par-color;
+  margin: 0;
+  background: abst.$body-back;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 500;
+}
+
+p {
+  margin: 0;
+  font-weight: 400;
+}
+
+.paragraph-center {
+  max-width: 540px;
+  text-align: center;
+  line-height: abst.$lh-base;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: transparent;
+  cursor: pointer;
+}
