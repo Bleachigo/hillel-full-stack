@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Contacts page</title>
-    <link href="/css/styles.css" rel="stylesheet" />
+    <link href="../css/styles.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -13,22 +13,22 @@
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
-              <a class="nav__link" href="/index.html">Home</a>
+              <a class="nav__link" href="../index.html">Home</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="/pages/about.html">About</a>
+              <a class="nav__link" href="about.html">About</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="/pages/articles.html">Articles</a>
+              <a class="nav__link" href="articles.html">Articles</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="/pages/contacts.html">Contacts</a>
+              <a class="nav__link" href="contacts.html">Contacts</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="/pages/gallery.html">Gallery</a>
+              <a class="nav__link" href="gallery.html">Gallery</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="/pages/anchors.html">Anchors</a>
+              <a class="nav__link" href="anchors.html">Anchors</a>
             </li>
           </ul>
         </nav>
@@ -54,11 +54,23 @@
               <legend>Information about you</legend>
               <div>
                 <label class="label" for="name">Name:</label>
-                <input type="text" name="name" placeholder="Enter your name" id="name" required />
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Enter your name"
+                  id="name"
+                  required
+                />
               </div>
               <div>
                 <label for="password">Password:</label>
-                <input type="password" name="password" placeholder="Enter your password" id="password" required />
+                <input
+                  type="password"
+                  name="password"
+                  placeholder="Enter your password"
+                  id="password"
+                  required
+                />
               </div>
             </fieldset>
             <fieldset class="form__fieldset">
@@ -71,13 +83,24 @@
               </div>
               <div>
                 <label for="radio-male">
-                  <input type="radio" name="sex" value="male" id="radio-male" checked />
+                  <input
+                    type="radio"
+                    name="sex"
+                    value="male"
+                    id="radio-male"
+                    checked
+                  />
                   Male
                 </label>
               </div>
               <div>
                 <label for="radio-female">
-                  <input type="radio" name="sex" value="female" id="radio-female" />
+                  <input
+                    type="radio"
+                    name="sex"
+                    value="female"
+                    id="radio-female"
+                  />
                   Female
                 </label>
               </div>
@@ -119,7 +142,12 @@
               <legend>Your experience</legend>
               <div class="not-input">
                 <label for="exp">Tell us your story:</label>
-                <textarea name="experience" id="exp" rows="5" cols="35"></textarea>
+                <textarea
+                  name="experience"
+                  id="exp"
+                  rows="5"
+                  cols="35"
+                ></textarea>
               </div>
             </fieldset>
             <button class="form-btn" type="submit">Submit</button>
