@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+}
+
+.svg {
+  background: #0e2136;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.svg__wrapper {
+  display: flex;
+  gap: 50px;
+}
+.svg__circle .coin {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: coin 0.5s linear infinite;
+}
+.svg__ellipse path {
+  animation: colors 5s ease infinite alternate;
+}
+
+@keyframes coin {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+@keyframes colors {
+  0% {
+    fill: #4da0a9;
+    stroke: #58ddec;
+  }
+  25% {
+    fill: #7dc72d;
+    stroke: #ec5871;
+  }
+  50% {
+    fill: #db3e33;
+    stroke: #8c3aff;
+  }
+  75% {
+    fill: #5b2dc7;
+    stroke: #ec58e0;
+  }
+  100% {
+    fill: #ac3bbb;
+    stroke: #3dc380;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
