@@ -28,11 +28,22 @@ The task was to create an index.html file with several tags.
 
 ### Homework-2.1
 
-The task was to create markup for multipage site e.g. navigation.
+The task was to create a file structure and markup for multipage site e.g. navigation.
 
-### Homework-1.1
+#### 🛠 Skills & Tools
 
-- The task was to create an index.html file with several tags.
+- **HTML5**: Semantic tags (`<ul>`, `<li>`, `<a>`.)
+
+---
+
+### Homework-3.1
+
+The task was to visually style the previous home work.
+
+#### 🛠 Skills & Tools
+
+- **HTML5**
+- **CSS3**
 
 ### Homework-1.1
 
