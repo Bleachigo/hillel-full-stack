@@ -1,40 +1,16 @@
 @use "../abstracts" as abst;
 
 .header {
-  background: abst.$grey-back;
-  padding-top: 80px;
-  padding-bottom: 80px;
-
-  @include abst.lg {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-
-  @include abst.md {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
 }
 
 .nav {
-  max-width: 565px;
+}
 
-  &__list {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  &__item--active &__link {
-    font-weight: 500;
-    color: abst.$accent;
-  }
-
-  &__link {
-    text-transform: uppercase;
-    color: #000;
-  }
+.burger {
+  margin-left: auto;
+  display: none;
 
   @include abst.custom {
-    display: none;
+    display: flex;
   }
 }

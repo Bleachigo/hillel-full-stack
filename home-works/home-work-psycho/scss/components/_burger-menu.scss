@@ -1,0 +1,12 @@
+@use "../abstracts" as abst;
+
+.burger {
+  width: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  &__line {
+    border: 1px solid #000;
+  }
+}
