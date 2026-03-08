@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Джерело</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --font-raleway: Raleway, sans-serif;
+        --text-ticker: 32px;
+        --text-ticker-mb: 20px;
+
+        --color-main-blue: #1a7df0;
+        --color-second-blue: #005bc5;
+        --color-second-yellow: #ffe711;
+        --color-second-dark: #333;
+      }
+      body {
+        @apply font-raleway text-second-dark;
+      }
+      h1 {
+        @apply text-[38px] font-medium;
+        @apply lg:text-[65px];
+      }
+      h2 {
+        @apply text-[28px] font-normal;
+        @apply lg:text-[42px];
+      }
+      h3 {
+        @apply text-2xl font-bold leading-[1.3];
+        @apply lg:text-3xl;
+      }
+      h4 {
+        @apply text-base font-bold leading-[1.2];
+        @apply lg:text-xl;
+      }
+      h5 {
+        @apply text-base font-normal leading-[1.5];
+        @apply lg:text-2xl leading-none;
+      }
+      .text-20 {
+        @apply text-base leading-[1.5];
+        @apply lg:text-xl;
+      }
+      .text-18 {
+        @apply text-base leading-[1.5];
+        @apply lg:text-lg;
+      }
+      .text-small {
+        @apply text-base leading-[1.5];
+        @apply lg:text-xs;
+      }
+    </style>
+  </head>
+  <body class="relative">
+    <header
+      class="container absolute top-[10px] px-[20px] flex justify-between items-center"
+    >
+      <a
+        href="index.html"
+        class="block bg-[url(./img/logo.png)] w-[128px] h-[70px]"
+      ></a>
+      <button type="button">
+        <svg class="stroke-second-dark w-[40px] h-[40px]">
+          <use xlink:href="./img/sprite.svg#menu"></use>
+        </svg>
+      </button>
+    </header>
+    <main>
+      <section class="pt-[112px] pb-[40px]">
+        <div class="container">
+          <h1>Українська Асоціація &laquoДжерело&raquo</h1>
+          <p>
+            Розвиток та підтримка української діаспори в Каталонії, Іспанії з
+            2012 року
+          </p>
+          <button type="button">Зв’язатись</button>
+          <button type="button">Підтримати</button>
+        </div>
+      </section>
+      <section></section>
+      <section></section>
+      <section></section>
+      <section></section>
+      <section></section>
+      <section></section>
+      <section></section>
+      <section></section>
+      <section></section>
+      <section></section>
+      <section></section>
+      <section></section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
