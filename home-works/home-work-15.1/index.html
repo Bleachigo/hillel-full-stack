@@ -18,12 +18,16 @@
         --text-ticker-mb: 20px;
 
         --color-main-blue: #1a7df0;
+        --color-main-yellow: #ffe711;
         --color-second-blue: #005bc5;
-        --color-second-yellow: #ffe711;
+        --color-second-yellow: #f9d100;
         --color-second-dark: #333;
+
+        --breakpoint-xs: 500px;
+        --breakpoint-2xl: 90rem;
       }
       body {
-        @apply font-raleway text-second-dark;
+        @apply font-raleway text-second-dark px-[20px];
       }
       h1 {
         @apply text-[38px] font-medium;
@@ -45,6 +49,12 @@
         @apply text-base font-normal leading-[1.5];
         @apply lg:text-2xl leading-none;
       }
+      summary::-webkit-details-marker {
+        display: none;
+      }
+      button {
+        @apply cursor-pointer;
+      }
       .text-20 {
         @apply text-base leading-[1.5];
         @apply lg:text-xl;
@@ -57,36 +67,469 @@
         @apply text-base leading-[1.5];
         @apply lg:text-xs;
       }
+      .hover-blue {
+        @apply hover:stroke-main-blue transition-colors duration-200 ease-in-out;
+      }
     </style>
   </head>
-  <body class="relative">
-    <header
-      class="container absolute top-[10px] px-[20px] flex justify-between items-center"
-    >
-      <a
-        href="index.html"
-        class="block bg-[url(./img/logo.png)] w-[128px] h-[70px]"
-      ></a>
-      <button type="button">
-        <svg class="stroke-second-dark w-[40px] h-[40px]">
-          <use xlink:href="./img/sprite.svg#menu"></use>
-        </svg>
-      </button>
+  <body>
+    <header class="pt-[10px] flex justify-between items-center flex-wrap">
+      <div class="container mx-auto">
+        <div
+          class="w-full flex justify-between items-center lg:border-b-second-dark lg:border-b-[1px] pb-[10px] mb-[12px]"
+        >
+          <a
+            href="index.html"
+            class="block bg-[url(./img/logo.png)] w-[128px] h-[70px] mr-[40px] xl:mr-[60px]"
+          ></a>
+          <ul class="hidden lg:flex gap-4 mr-auto">
+            <li>
+              <a href="#">
+                <svg
+                  class="stroke-second-dark stroke-[1.3] w-[24px] h-[24px] hover-blue"
+                >
+                  <use xlink:href="./img/sprite.svg#whatsup"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg
+                  class="stroke-second-dark stroke-[1.3] w-[24px] h-[24px] hover-blue"
+                >
+                  <use xlink:href="./img/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg
+                  class="stroke-second-dark stroke-[1.3] w-[24px] h-[24px] hover-blue"
+                >
+                  <use xlink:href="./img/sprite.svg#insta"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg
+                  class="stroke-second-dark stroke-[1.3] w-[24px] h-[24px] hover-blue"
+                >
+                  <use xlink:href="./img/sprite.svg#telegram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg
+                  class="stroke-second-dark stroke-[1.3] w-[24px] h-[24px] hover-blue"
+                >
+                  <use xlink:href="./img/sprite.svg#youtube"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <address
+            class="hidden lg:flex mr-[30px] xl:mr-[40px] not-italic lining-nums text-base lg:text-lg leading-[1.5]"
+          >
+            <a
+              href="tel:+34641352251"
+              class="mr-[35px] flex items-center gap-[10px]"
+            >
+              <svg class="stroke-second-dark stroke-[1.3] w-[24px] h-[24px]">
+                <use xlink:href="./img/sprite.svg#phone"></use>
+              </svg>
+              +34 641 35 22 51</a
+            >
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Carrer+de+Béjar%2C+38%2C+Barcelona"
+              class="flex items-center gap-[5px]"
+              target="_blank"
+            >
+              <svg class="stroke-second-dark stroke-[1.3] w-[24px] h-[24px]">
+                <use xlink:href="./img/sprite.svg#location"></use>
+              </svg>
+              Carrer de Béjar, 38, Barcelona</a
+            >
+          </address>
+          <details
+            class="group relative hidden lg:inline-block text-left text-lg leading-none"
+          >
+            <summary
+              aria-haspopup="listbox"
+              class="list-none flex items-center gap-1 cursor-pointer select-none"
+            >
+              <span
+                class="uppercase font-normal hover:text-main-blue duration-200 ease-in-out"
+                >ukr</span
+              >
+              <span
+                class="transition-transform duration-200 group-open:rotate-x-180"
+              >
+                <svg class="stroke-second-dark stroke-1.5 w-[24px] h-[24px]">
+                  <use xlink:href="./img/sprite.svg#arrow"></use>
+                </svg>
+              </span>
+            </summary>
+            <ul
+              role="listbox"
+              class="absolute min-w-[65px] z-10 p-[5px] mt-2 bg-white border border-gray-200 shadow-lg"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="block hover:text-main-blue transition-colors uppercase text-lg leading-[1.5]"
+                  role="option"
+                  >en</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block hover:text-main-blue transition-colors uppercase text-lg leading-[1.5]"
+                  role="option"
+                  >esp</a
+                >
+              </li>
+            </ul>
+          </details>
+          <button
+            type="button"
+            class="lg:hidden cursor-pointer"
+            popovertarget="main-menu"
+          >
+            <svg class="stroke-second-dark stroke-1 w-[40px] h-[40px]">
+              <use xlink:href="./img/sprite.svg#menu"></use>
+            </svg>
+          </button>
+          <div
+            class="relative min-w-full md:min-w-[500px] pt-[20px] px-[25px] pb-[45px] shadow-lg overflow-hidden"
+            popover
+            id="main-menu"
+          >
+            <svg
+              class="absolute top-[20px] right-[25px] stroke-second-dark stroke-1 w-[32px] h-[32px] cursor-pointer"
+            >
+              <use xlink:href="./img/sprite.svg#cross"></use>
+            </svg>
+            <div
+              class="bg-main-blue blur-[150px] w-[128px] h-[128px] rounded-full absolute bottom-[20%] -left-[35px] -z-4"
+            ></div>
+            <div
+              class="bg-main-yellow blur-[150px] w-[128px] h-[128px] rounded-full absolute top-[20%] -right-[35px] -z-4"
+            ></div>
+            <details
+              class="group relative inline-block text-left text-lg leading-none mb-[41px]"
+            >
+              <summary
+                aria-haspopup="listbox"
+                class="list-none flex items-center gap-1 cursor-pointer select-none"
+              >
+                <span
+                  class="uppercase font-normal hover:text-main-blue duration-200 ease-in-out"
+                  >ukr</span
+                >
+                <span
+                  class="transition-transform duration-200 group-open:rotate-x-180"
+                >
+                  <svg class="stroke-second-dark stroke-1 w-[24px] h-[24px]">
+                    <use xlink:href="./img/sprite.svg#arrow"></use>
+                  </svg>
+                </span>
+              </summary>
+              <ul
+                role="listbox"
+                class="absolute min-w-[65px] z-10 p-[5px] mt-2 bg-white border border-gray-200 shadow-lg"
+              >
+                <li>
+                  <a
+                    href="#"
+                    class="block hover:text-main-blue transition-colors uppercase text-lg leading-[1.5]"
+                    role="option"
+                    >en</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block hover:text-main-blue transition-colors uppercase text-lg leading-[1.5]"
+                    role="option"
+                    >esp</a
+                  >
+                </li>
+              </ul>
+            </details>
+            <nav class="font-medium mb-[30px]">
+              <ul
+                class="flex flex-col items-start gap-[30px] text-xl leading-none"
+              >
+                <li>
+                  <a
+                    href="#"
+                    class="block hover:text-main-blue transition-colors"
+                    role="option"
+                    >Гуманітарний центр</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block hover:text-main-blue transition-colors"
+                    role="option"
+                    >Український центр у Барселоні</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block hover:text-main-blue transition-colors"
+                    role="option"
+                    >Бібліотека</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block hover:text-main-blue transition-colors"
+                    role="option"
+                    >Школа та садочок</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block hover:text-main-blue transition-colors"
+                    role="option"
+                    >Український сад
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="hover:text-main-blue transition-colors"
+                    >Наші партнери</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:text-main-blue transition-colors"
+                    >Звіти</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:text-main-blue transition-colors"
+                    >Новини</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:text-main-blue transition-colors"
+                    >Контакти</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <ul class="flex gap-4 mb-[30px]">
+              <li>
+                <a href="#">
+                  <svg
+                    class="stroke-second-dark stroke-1 w-[32px] h-[32px] hover-blue"
+                  >
+                    <use xlink:href="./img/sprite.svg#whatsup"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg
+                    class="stroke-second-dark stroke-1 w-[32px] h-[32px] hover-blue"
+                  >
+                    <use xlink:href="./img/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg
+                    class="stroke-second-dark stroke-1 w-[32px] h-[32px] hover-blue"
+                  >
+                    <use xlink:href="./img/sprite.svg#insta"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg
+                    class="stroke-second-dark stroke-1 w-[32px] h-[32px] hover-blue"
+                  >
+                    <use xlink:href="./img/sprite.svg#telegram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg
+                    class="stroke-second-dark stroke-1 w-[32px] h-[32px] hover-blue"
+                  >
+                    <use xlink:href="./img/sprite.svg#youtube"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <address
+              class="flex gap-[20px] flex-wrap not-italic lining-nums text-base lg:text-lg leading-[1.5]"
+            >
+              <a href="tel:+34641352251" class="flex items-center gap-[10px]">
+                <svg class="stroke-second-dark stroke-1 w-[32px] h-[32px]">
+                  <use xlink:href="./img/sprite.svg#phone"></use>
+                </svg>
+                +34 641 35 22 51</a
+              >
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Carrer+de+Béjar%2C+38%2C+Barcelona"
+                class="flex items-center gap-[5px]"
+                target="_blank"
+              >
+                <svg class="stroke-second-dark stroke-1 w-[32px] h-[32px]">
+                  <use xlink:href="./img/sprite.svg#location"></use>
+                </svg>
+                Carrer de Béjar, 38, Barcelona</a
+              >
+            </address>
+          </div>
+        </div>
+        <nav class="font-medium hidden lg:flex justify-center">
+          <ul class="flex items-center gap-[40px] text-xl leading-none">
+            <li>
+              <details
+                class="group relative inline-block text-left text-xl leading-none"
+              >
+                <summary
+                  aria-haspopup="listbox"
+                  class="list-none flex items-center gap-1 cursor-pointer select-none"
+                >
+                  <span class="hover:text-main-blue transition-colors"
+                    >Наші напрямки</span
+                  >
+                  <span
+                    class="transition-transform duration-200 group-open:rotate-x-180"
+                  >
+                    <svg class="stroke-second-dark w-[24px] h-[24px]">
+                      <use xlink:href="./img/sprite.svg#arrow"></use>
+                    </svg>
+                  </span>
+                </summary>
+                <ul
+                  role="listbox"
+                  class="absolute left-[50%] -translate-x-[50%] min-w-[235px] z-10 py-[15px] px-[20px] mt-2 bg-white border border-gray-200 shadow-lg text-xl leading-none flex flex-col gap-[15px]"
+                >
+                  <li>
+                    <a
+                      href="#"
+                      class="block hover:text-main-blue transition-colors"
+                      role="option"
+                      >Гуманітарний центр</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block hover:text-main-blue transition-colors"
+                      role="option"
+                      >Український центр у Барселоні</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block hover:text-main-blue transition-colors"
+                      role="option"
+                      >Бібліотека</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block hover:text-main-blue transition-colors"
+                      role="option"
+                      >Школа та садочок</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block hover:text-main-blue transition-colors"
+                      role="option"
+                      >Український сад
+                    </a>
+                  </li>
+                </ul>
+              </details>
+            </li>
+            <li>
+              <a href="#" class="hover:text-main-blue transition-colors"
+                >Наші партнери</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-main-blue transition-colors"
+                >Звіти</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-main-blue transition-colors"
+                >Новини</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-main-blue transition-colors"
+                >Контакти</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
-      <section class="pt-[112px] pb-[40px]">
-        <div class="container">
-          <h1>Українська Асоціація &laquoДжерело&raquo</h1>
-          <p>
+      <section class="relative pt-[32px] lg:pt-[110px] pb-[40px]">
+        <div
+          class="bg-main-blue blur-[150px] w-[355px] h-[355px] rounded-full absolute bottom-[20%] -left-[153px] -z-4"
+        ></div>
+        <div
+          class="bg-main-yellow blur-[150px] w-[355px] h-[355px] rounded-full absolute top-[20%] -right-[35px] -z-4"
+        ></div>
+        <div class="container mx-auto text-center">
+          <h1 class="mb-[10px]">Українська Асоціація &laquoДжерело&raquo</h1>
+          <p class="text-20 max-w-[535px] mb-[35px] mx-auto">
             Розвиток та підтримка української діаспори в Каталонії, Іспанії з
             2012 року
           </p>
-          <button type="button">Зв’язатись</button>
-          <button type="button">Підтримати</button>
+          <div
+            class="text-xl lg:text-2xl leading-none mb-[110px] flex flex-wrap xs:justify-center gap-[10px] md:gap-[20px]"
+          >
+            <button
+              type="button"
+              class="w-full xs:w-[350px] py-[15px] rounded-full text-[#fff] bg-main-blue hover:bg-second-blue transition-colors duration-300 ease-in-out"
+            >
+              Зв’язатись
+            </button>
+            <button
+              type="button"
+              class="w-full xs:w-[350px] py-[15px] rounded-full bg-main-yellow hover:bg-second-yellow transition-colors duration-300 ease-in-out"
+            >
+              Підтримати
+            </button>
+          </div>
         </div>
+        <ul class="running-line">
+          <li>Допомагаємо</li>
+          <li>Консультуємо</li>
+          <li>Розвиваємо</li>
+          <li>Iнтегруємо</li>
+          <li>Допомагаємо</li>
+          <li>Консультуємо</li>
+          <li>Допомагаємо</li>
+        </ul>
       </section>
       <section></section>
       <section></section>
+
       <section></section>
       <section></section>
       <section></section>
