@@ -27,7 +27,7 @@
         --breakpoint-2xl: 90rem;
       }
       body {
-        @apply font-raleway text-second-dark px-[20px];
+        @apply font-raleway text-second-dark;
       }
       h1 {
         @apply text-[38px] font-medium;
@@ -70,10 +70,15 @@
       .hover-blue {
         @apply hover:stroke-main-blue transition-colors duration-200 ease-in-out;
       }
+      .running-line li {
+        @apply bg-[url(./img/ticker-img.png)] bg-no-repeat bg-left pl-[39px] text-[22px] leading-none lg:text-[32px];
+      }
     </style>
   </head>
   <body>
-    <header class="pt-[10px] flex justify-between items-center flex-wrap">
+    <header
+      class="absolute z-5 left-[50%] -translate-x-[50%] w-full pt-[10px] px-[20px] flex justify-between items-center flex-wrap"
+    >
       <div class="container mx-auto">
         <div
           class="w-full flex justify-between items-center lg:border-b-second-dark lg:border-b-[1px] pb-[10px] mb-[12px]"
@@ -417,7 +422,7 @@
                 </summary>
                 <ul
                   role="listbox"
-                  class="absolute left-[50%] -translate-x-[50%] min-w-[235px] z-10 py-[15px] px-[20px] mt-2 bg-white border border-gray-200 shadow-lg text-xl leading-none flex flex-col gap-[15px]"
+                  class="absolute left-[50%] -translate-x-[50%] min-w-[238px] z-10 py-[15px] px-[20px] mt-2 bg-white border border-gray-200 shadow-lg text-xl leading-none flex flex-col gap-[15px]"
                 >
                   <li>
                     <a
@@ -487,21 +492,23 @@
       </div>
     </header>
     <main>
-      <section class="relative pt-[32px] lg:pt-[110px] pb-[40px]">
+      <section
+        class="relative pt-[112px] lg:pt-[240px] overflow-x-hidden overflow-y-clip bg-[url(./img/hug.svg)] bg-no-repeat bg-[auto_300px] md:bg-contain bg-[center_top_60px] sm:bg-[center_top_80px] xl:bg-[center_top_1px]"
+      >
         <div
-          class="bg-main-blue blur-[150px] w-[355px] h-[355px] rounded-full absolute bottom-[20%] -left-[153px] -z-4"
+          class="bg-main-blue blur-[100px] lg:blur-[120px] xl:blur-[270px] size-32 lg:size-48 xl:size-89 rounded-full absolute top-[193px] lg:top-[330px] xl:top-[430px] -left-[64px] xl:-left-[133px] -z-4"
         ></div>
         <div
-          class="bg-main-yellow blur-[150px] w-[355px] h-[355px] rounded-full absolute top-[20%] -right-[35px] -z-4"
+          class="bg-main-yellow blur-[100px] lg:blur-[120px] xl:blur-[270px] size-32 lg:size-48 xl:size-89 rounded-full absolute top-[62px] lg:top-[150px] right-[0] -z-4"
         ></div>
-        <div class="container mx-auto text-center">
+        <div class="container px-[20px] mx-auto text-center">
           <h1 class="mb-[10px]">Українська Асоціація &laquoДжерело&raquo</h1>
           <p class="text-20 max-w-[535px] mb-[35px] mx-auto">
             Розвиток та підтримка української діаспори в Каталонії, Іспанії з
             2012 року
           </p>
           <div
-            class="text-xl lg:text-2xl leading-none mb-[110px] flex flex-wrap xs:justify-center gap-[10px] md:gap-[20px]"
+            class="text-xl lg:text-2xl leading-none mb-[32px] xs:mb-[110px] flex flex-wrap xs:justify-center gap-[10px] md:gap-[20px]"
           >
             <button
               type="button"
@@ -517,14 +524,16 @@
             </button>
           </div>
         </div>
-        <ul class="running-line">
+        <ul
+          class="running-line flex gap-[25px] overflow-hidden w-full py-[25px] border-t-5 border-t-main-blue border-b-5 border-b-main-yellow bg-[#fff]"
+        >
           <li>Допомагаємо</li>
           <li>Консультуємо</li>
           <li>Розвиваємо</li>
           <li>Iнтегруємо</li>
           <li>Допомагаємо</li>
           <li>Консультуємо</li>
-          <li>Допомагаємо</li>
+          <li>Розвиваємо</li>
         </ul>
       </section>
       <section></section>
