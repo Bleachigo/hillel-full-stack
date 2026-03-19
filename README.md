@@ -45,21 +45,25 @@ The task was to visually style the previous home work.
 - **HTML5**
 - **CSS3**
 
-### Homework-1.1
+### Homework-4.1
 
-- The task was to create an index.html file with several tags.
+- The task was to create html tags, then css rules for them  
+  and describe their "weight".
 
-### Homework-1.1
+### Homework-6.1
 
-- The task was to create an index.html file with several tags.
+- The task was to create Mondrian's picture with table tags.
 
-### Homework-1.1
+### Homework-7.1
 
-- The task was to create an index.html file with several tags.
+- The task was to create block and inline elements,  
+  apply different properties and observe their behavior.
 
-### Homework-1.1
+### Homework-18.1
 
-- The task was to create an index.html file with several tags.
+- The first JS lesson where we learn variables and data types.
+
+---
 
 ## 🛠 Skills & Tools
 
