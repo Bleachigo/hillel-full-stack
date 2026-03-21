@@ -63,6 +63,10 @@ The task was to visually style the previous home work.
 
 - The first JS lesson where we learn variables and data types.
 
+### Homework-19.1
+
+- In this lesson we create a functions which return some results.
+
 ---
 
 ## 🛠 Skills & Tools
