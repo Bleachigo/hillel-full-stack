@@ -14,9 +14,9 @@
  Ця задача допоможе поглибити розуміння концепції карування та замикань у JavaScript, а також показує практичне застосування цих концепцій у реальних сценаріях програмування.
 */
 
-function curriedDomain(protocol = 'https') {
+function curriedDomain(protocol) {
   return function (domainName) {
-    return function (tld = 'com') {
+    return function (tld) {
       return `${protocol}://${domainName}.${tld}`;
     };
   };

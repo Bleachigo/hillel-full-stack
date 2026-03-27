@@ -11,17 +11,19 @@
 */
 
 function originalFunction(num) {
-  // code
+  return num * num;
 }
 
 function modifyFunction(originalFunc, multiplier) {
-  // code
+  return function (num) {
+    return originalFunc(num) * multiplier;
+  };
 }
 
 // Приклад використання
-// const modifiedFunc = modifyFunction(originalFunction, 3)
-// console.log('Original function output for 4:', originalFunction(4)) // Повинно вивести 16
-// console.log('Modified function output for 4:', modifiedFunc(4)) // Повинно вивести 48 (16 * 3)
+const modifiedFunc = modifyFunction(originalFunction, 3);
+console.log('Original function output for 4:', originalFunction(4)); // Повинно вивести 16
+console.log('Modified function output for 4:', modifiedFunc(4)); // Повинно вивести 48 (16 * 3)
 
 /*
  У цьому коді ми створюємо модифіковану версію originalFunction за допомогою modifyFunction з множником 3.
@@ -30,4 +32,4 @@ function modifyFunction(originalFunc, multiplier) {
  originalFunction(4) повинно повернути 16 (4 * 4), а modifiedFunc(4) повинно повернути 48, оскільки 16 (результат originalFunction) множиться на 3 (множник у modifyFunction).
 */
 
-export { originalFunction, modifyFunction }
+export { originalFunction, modifyFunction };
