@@ -40,11 +40,6 @@ The task was to create a file structure and markup for multipage site e.g. navig
 
 The task was to visually style the previous home work.
 
-#### 🛠 Skills & Tools
-
-- **HTML5**
-- **CSS3**
-
 ### Homework-4.1
 
 - The task was to create html tags, then css rules for them  
@@ -63,9 +58,26 @@ The task was to visually style the previous home work.
 
 - The first JS lesson where we learn variables and data types.
 
+- **Skills**: JavaScript
+
 ### Homework-19.1
 
 - In this lesson we create a functions which return some results.
+
+- **Skills**: JavaScript
+
+### Homework-20.1
+
+- In this home work we practicing a functions,  
+  conditional statement "if" and callback functions.
+
+- **Skills**: JavaScript
+
+### Homework-21.1
+
+- In this home work we practicing a currying, closure and HoF.
+
+- **Skills**: JavaScript
 
 ---
 
