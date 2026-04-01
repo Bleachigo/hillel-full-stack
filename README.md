@@ -79,6 +79,14 @@ The task was to visually style the previous home work.
 
 - **Skills**: JavaScript
 
+### Homework-22.1
+
+- In this home work we continue practicing closure,  
+  understand that functions are objects, create functions methods,  
+  practicing arrow functions.
+
+- **Skills**: JavaScript
+
 ---
 
 ## 🛠 Skills & Tools
