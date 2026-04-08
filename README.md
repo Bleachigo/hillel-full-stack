@@ -87,6 +87,13 @@ The task was to visually style the previous home work.
 
 - **Skills**: JavaScript
 
+### Homework-23.1
+
+- In this home we practicing classes,  
+  encapsulation, abstraction.
+
+- **Skills**: JavaScript
+
 ---
 
 ## 🛠 Skills & Tools
