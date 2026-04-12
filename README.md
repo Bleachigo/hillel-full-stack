@@ -94,23 +94,9 @@ The task was to visually style the previous home work.
 
 - **Skills**: JavaScript
 
----
+### Homework-24.1
 
-## 🛠 Skills & Tools
+- In this home we practicing classes,  
+  constructors, arrays and their methods.
 
-- **HTML5**: Semantic tags (`<article>`, `<section>`, etc.)
-- **CSS3**: Variables, Flexbox, Grid, and Transitions
-- **Best Practices**: [BEM Methodology](https://getbem.com) and [Mobile-First Design](https://www.w3schools.com)
-
----
-
-## 📂 Project Structure
-
-```text
-.
-├── 01-profile-card/  # HTML/CSS for task 1
-├── 02-pricing-table/ # HTML/CSS for task 2
-├── 03-travel-landing/ # Final project
-├── index.html        # Main navigation page
-└── README.md         # This documentation
-```
+- **Skills**: JavaScript
