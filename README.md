@@ -100,3 +100,10 @@ The task was to visually style the previous home work.
   constructors, arrays and their methods.
 
 - **Skills**: JavaScript
+
+### Homework-25.1
+
+- In this home we practicing DOM and BOM methods  
+  and working with events, cookies and sessionStorage.
+
+- **Skills**: JavaScript
