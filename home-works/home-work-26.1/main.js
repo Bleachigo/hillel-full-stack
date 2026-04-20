@@ -15,11 +15,16 @@ console.log('#9. JavaScript homework example file');
  * 4. Функція має бути експортована для подальшого використання і тестування.
  *
  */
+const eventHandler = (event) => {
+  const message = event.target.dataset.msg;
+  console.log(message);
+};
 
 function handleButtonClick(buttonId, message) {
   const button = document.getElementById(buttonId);
   if (button) {
-    button.addEventListener('click', () => console.log(message));
+    button.dataset.msg = message;
+    button.addEventListener('click', eventHandler);
   } else {
     console.error(`Button with ID "${buttonId}" not found.`);
   }
