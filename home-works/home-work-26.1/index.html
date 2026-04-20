@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JS 26.1</title>
+    <style>
+      @import url('../../css/back-to-home-works.css');
+      ul,
+      ol {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+      ul li,
+      ol li {
+        width: fit-content;
+        cursor: pointer;
+        border: 1px solid black;
+        border-radius: 5px;
+        background-color: lightgray;
+        padding: 5px 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="back">
+      <a href="../../index.html"><b>&lt;&equals;&equals; back to home works</b></a>
+    </div>
+    <h1>Please proceed to console tab in DevTools</h1>
+    <button id="myButton" type="button">Click here</button>
+    <ul id="testList">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>

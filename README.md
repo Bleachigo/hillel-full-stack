@@ -107,3 +107,10 @@ The task was to visually style the previous home work.
   and working with events, cookies and sessionStorage.
 
 - **Skills**: JavaScript
+
+### Homework-26.1
+
+- In this home we practicing event listeners,  
+  in particular Direct assignment, Global tracking, and Delegation.
+
+- **Skills**: JavaScript
