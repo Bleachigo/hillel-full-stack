@@ -89,28 +89,36 @@ The task was to visually style the previous home work.
 
 ### Homework-23.1
 
-- In this home we practicing classes,  
+- In this home-work we practicing classes,  
   encapsulation, abstraction.
 
 - **Skills**: JavaScript
 
 ### Homework-24.1
 
-- In this home we practicing classes,  
+- In this home-work we practicing classes,  
   constructors, arrays and their methods.
 
 - **Skills**: JavaScript
 
 ### Homework-25.1
 
-- In this home we practicing DOM and BOM methods  
+- In this home-work we practicing DOM and BOM methods  
   and working with events, cookies and sessionStorage.
 
 - **Skills**: JavaScript
 
 ### Homework-26.1
 
-- In this home we practicing event listeners,  
+- In this home-work we practicing event listeners,  
   in particular Direct assignment, Global tracking, and Delegation.
 
 - **Skills**: JavaScript
+
+### Homework-32
+
+- In this home-work we've learned what is API and how to use it.  
+  We've read documentation and build a movie searching service.
+
+- **Skills**: JavaScript
+- **Skills**: CSS Tailwind
